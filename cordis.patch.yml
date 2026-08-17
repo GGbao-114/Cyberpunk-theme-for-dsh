@@ -1,0 +1,5 @@
+# dsh-theme-cyberpunk2077 — profile patch layer.
+# Installs the theme row into the web profile; requires a `dsh web` restart.
+- insert:
+    - id: ui-theme-cyberpunk
+      name: 'dsh-theme-cyberpunk2077'
