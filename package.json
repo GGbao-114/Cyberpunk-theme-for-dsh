@@ -1,0 +1,51 @@
+{
+  "name": "dsh-theme-cyberpunk2077",
+  "version": "0.2.0",
+  "description": "Cyberpunk 2077 red/neon fork of the Night City theme for DeepSeek Harness Web UI — neon red × cyan × green identity, base64-embedded Ryzes & Cyberpunk fonts, CYBERPUNK 2077 INFECTING boot screen, Tab 'relic virus' session switcher (left 120° arc + hacker terminal), green code-rain particles. Forked from dsh-theme-cyberpunk2077 by Tommy00748.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tommy00748/dsh-theme-cyberpunk2077.git"
+  },
+  "homepage": "https://github.com/Tommy00748/dsh-theme-cyberpunk2077",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "assets",
+    "cordis.patch.yml"
+  ],
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "cordis",
+    "theme",
+    "skin",
+    "dark-theme",
+    "cyberpunk",
+    "cyberpunk-2077",
+    "night-city",
+    "neon",
+    "web-ui"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme"
+      ]
+    }
+  },
+  "license": "MIT"
+}
