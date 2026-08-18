@@ -1,44 +1,34 @@
 # dsh-theme-cyberpunk-red
 
-赛博朋克 2077「夜之城」红×青×绿霓虹主题 —— DeepSeek Harness Web UI 的皮肤插件（**dsh-plugin**）。
+赛博朋克 2077「夜之城」红 × 青 × 绿霓虹主题 —— DeepSeek Harness Web UI 皮肤插件（**dsh-plugin**）。
 
-这是 [Tommy00748/dsh-theme-cyberpunk2077](https://github.com/Tommy00748/dsh-theme-cyberpunk2077) 的**重制分支**。
+改自 [Tommy00748/dsh-theme-cyberpunk2077](https://github.com/Tommy00748/dsh-theme-cyberpunk2077)，感谢原作者。
 
-## 🙏 原始作者
+## 功能特点
 
-- 原作者：[Tommy00748](https://github.com/Tommy00748)
-- 原仓库：[dsh-theme-cyberpunk2077](https://github.com/Tommy00748/dsh-theme-cyberpunk2077)
-- 原协议：MIT（本分支同样保持 MIT，并保留原作者署名）
+- **霓虹红 × 青 × 绿配色**，深色背景，赛博朋克夜之城风格
+- **内嵌字体**：Ryzes（赛博涂鸦）、Cyberpunk、Orbitron 均 base64 内嵌，无需联网加载
+- **开屏动画**：CYBERPUNK 2077 大字 + INFECTING 载入进度条 + CRT 扫描线转场
+- **Tab 病毒槽切换**：按 Tab 呼出左侧 120° 弧线会话切换器，最近对话置顶，滚轮选择，中右弹出黑客命令行终端
+- **绿色代码雨粒子背景** + 藏青色底，电子码氛围
+- 隐藏彩蛋：发送 `relic` / `johnny` 触发全屏特效
 
-> 本仓库仅对原主题做了视觉与功能上的二次开发，核心代码版权归原作者 Tommy00748 所有。
-
-## ✨ 与原版的区别
-
-| 项 | 原版 | 本分支 |
-|---|---|---|
-| 配色 | NC 黄 × 霓虹青 | **霓虹红 × 青 × 一点亮黄/绿**，黑底保留 |
-| 字体 | MiSans | 内嵌 **Ryzes（赛博涂鸦）+ Cyberpunk + Orbitron**（base64，无需联网） |
-| Logo | 原生 DeepSeek 图标 | 左上角 **DeepSeek 艺术字** |
-| 开屏 | NIGHT CITY 转场 | **CYBERPUNK 2077** 大字 + **INFECTING** 载入进度条 |
-| 交互 | — | **Tab 病毒槽**：左侧 120° 弧 + 8 个最近会话（滚轮选择）+ 中右黑客终端 |
-| 背景 | 纯黑 | 藏青 + 绿色代码雨粒子 |
-
-## 📦 安装
+## 安装
 
 ```sh
-dsh plugin --profile web add <你的仓库地址>
+dsh plugin --profile web add github:GGbao-114/Cyberpunk-theme-for-dsh
 ```
 
 安装后重启 `dsh web` 生效。
 
-## 🔧 字体来源（已内嵌）
+## 截图
 
-- **Ryzes**（Cyber Graffiti）：个人非商用免费，作者 faptype.com
-- **Cyberpunk**：fontsrepo 免费字体
-- **Orbitron**：Google Fonts（OFL）
+![主界面](assets/red-theme.png)
 
-字体文件已 base64 内嵌进 `lib/client.js`，页面渲染不依赖任何外部字体 CDN。原始字体文件备份在 `fonts/` 目录。
+![Tab 会话切换](assets/tab-switcher.png)
 
-## 📄 许可
+![开屏](assets/boot.png)
+
+## 许可
 
 MIT。字体版权归各自作者所有。
